@@ -7,4 +7,4 @@ def test_post_view(client):
     response = client.get(url)
 
     assert response.status_code == 200
-    assert b"Hello World" in response.content
+    assert b"Welcome to my awesome Blog" in response.content
